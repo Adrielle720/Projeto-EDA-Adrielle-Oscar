@@ -1,0 +1,38 @@
+site_name: EDA — Predição de AVC (Stroke)
+site_description: Análise Exploratória de Dados — Projeto de Machine Learning (APS1)
+site_author: Adrielle
+
+theme:
+  name: material
+  language: pt-BR
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Modo escuro
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+  features:
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
+
+nav:
+  - Início: index.md
+  - Notebook EDA: notebooks/eda-stroke.ipynb
+  - Principais achados: achados.md
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+      include_source: true
+      execute: false
+
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
